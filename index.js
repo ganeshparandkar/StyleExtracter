@@ -1,10 +1,16 @@
 function getData() {
   let htmltext = document.getElementById('html_input').value;
+  let csstext = document.getElementById('css_input').value;
   let classesList = getClasses(htmltext);
   alert(classesList);
 }
 
 let not_formatted = `
+.mfp-wrap {
+top: 0;left: 0;width: 100%;
+z-index: 1043;position: fixed;
+outline: none !important;
+-webkit-backface-visibility: hidden; }
 .mfp-wrap {
 top: 0;left: 0;width: 100%;
 z-index: 1043;position: fixed;
